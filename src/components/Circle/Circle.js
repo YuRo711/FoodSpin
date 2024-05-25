@@ -1,3 +1,4 @@
+import { useState } from "react";
 import "./Circle.css";
 
 function Circle(props) {
@@ -6,11 +7,13 @@ function Circle(props) {
   }
 
   const { color } = props.data;
-  const getNthImage = props.getNthImage;
+  const { getNthImage, productsLength} = props;
 
   return(
     <div className={`circle circle_color_${color}`}>
-      <div className="circle__wheel">
+      <div className="circle__wheel"
+        style={calculateTransform(-props.rotationIndex)}
+      >
         <div className="circle__images">
           <img className="circle__product"
             src={getNthImage(0)}

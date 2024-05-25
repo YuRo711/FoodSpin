@@ -7,12 +7,15 @@ import { pageData } from "../../utils/constants";
 function App(props) {
   function scrollData(isForward) {
     let newIndex = currentIndex + (isForward ? 1 : -1);
+    let newRotationIndex = rotationIndex + (isForward ? 1 : -1);
     if (newIndex >= pageData.length) {
       newIndex = 0;
+      newRotationIndex %= (pageData.length * 2);
     } else if (newIndex < 0) {
       newIndex = pageData.length - 1;
+      newRotationIndex = pageData.length * 2 - 1;
     }
-    console.log(newIndex);
+    setRotationIndex(newRotationIndex)
     setIndex(newIndex);
     setPageData(pageData[newIndex]);
   }
@@ -22,6 +25,7 @@ function App(props) {
   }
 
   const [currentIndex, setIndex] = useState(0);
+  const [rotationIndex, setRotationIndex] = useState(0);
   const [currentData, setPageData] = useState(pageData[currentIndex]);
 
   return(
@@ -31,6 +35,7 @@ function App(props) {
         data={currentData}
         getNthImage={getNthImage}
         scrollData={scrollData}
+        rotationIndex={rotationIndex}
       />
     </div>
   );

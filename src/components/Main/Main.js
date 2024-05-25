@@ -10,6 +10,7 @@ function Main(props) {
         <Circle
           data={props.data}
           getNthImage={props.getNthImage}
+          rotationIndex={props.rotationIndex}
         />
         <Product
           data={props.data}
