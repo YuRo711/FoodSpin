@@ -1,0 +1,73 @@
+.product {
+    position: absolute;
+    top: 400px;
+    left: 618px;
+    width: 650px;
+    z-index: 1;
+    display: flex;
+    justify-content: space-between;
+}
+
+.product__button {
+    width: 40px;
+    height: 40px;
+    background: none;
+    border: none;
+    border-radius: 50%;
+    background-image: url('../../images/arrow.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-top: auto;
+    cursor: pointer;
+    transition: scale 0.3s ease-in-out, background-color 0.3s ease-in-out;
+}
+
+.product__button:hover {
+    scale: 1.1;
+}
+
+.product__button:active {
+    scale: 1;
+}
+
+.product__button_color_orange {
+    background-color: #FF922C;
+    box-shadow: 0 10px 20px #F4E2D1;
+}
+
+.product__button_color_orange:hover {
+    background-color: #ffa44f;    
+}
+
+.product__button_color_orange:active {
+    background-color: #e07e21;    
+}
+
+.product__button_color_green {
+    background-color: #54BF29;
+    box-shadow: 0 10px 20px #DBF4D1;
+}
+
+.product__button_color_green:hover {
+    background-color: #67c442;    
+}
+
+.product__button_color_green:active {
+    background-color: #44a01f;    
+}
+
+.product__button_left {
+    transform: rotate(90deg);
+}
+
+.product__button_right {
+    transform: rotate(-90deg);
+}
+
+
+.product__image {
+    width: 290px;
+    height: 290px;
+    border-radius: 50%;
+    box-shadow: 0 20px 40px #D1D1D1;    
+}

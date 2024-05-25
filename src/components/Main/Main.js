@@ -1,4 +1,5 @@
 import Circle from "../Circle/Circle";
+import Product from "../Current/Product";
 import "./Main.css";
 
 function Main(props) {
@@ -10,6 +11,10 @@ function Main(props) {
         <Circle
           data={props.data}
         />
+        <Product
+          data={props.data}
+        />
+
         <div className="main__info">
           <h2 className={`main__price main__price_color_${color}`}>
             {price}
@@ -20,12 +25,12 @@ function Main(props) {
           <p className="main__text">
             {description}
           </p>
+          <button className={`main__button main__button_color_${color}`}
+            type="button"
+          >
+            Order now
+          </button>
         </div>
-        <button className={`main__button main__button_color_${color}`}
-          type="button"
-        >
-          Order now
-        </button>
     </div>
   );
 }
