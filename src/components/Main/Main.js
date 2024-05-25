@@ -4,7 +4,6 @@ import "./Main.css";
 
 function Main(props) {
   const { color, price, title, description } = props.data;
-  console.log(title);
 
   return(
     <div className="main">
@@ -13,6 +12,7 @@ function Main(props) {
         />
         <Product
           data={props.data}
+          scrollData={props.scrollData}
         />
 
         <div className="main__info">

@@ -6,14 +6,15 @@ import { pageData } from "../../utils/constants";
 
 function App(props) {
   function scrollData(isForward) {
-    let newIndex = currentIndex + isForward ? 1 : -1;
+    let newIndex = currentIndex + (isForward ? 1 : -1);
     if (newIndex >= pageData.length) {
       newIndex = 0;
     } else if (newIndex < 0) {
       newIndex = pageData.length - 1;
     }
+    console.log(newIndex);
     setIndex(newIndex);
-    setPageData(pageData[currentIndex]);
+    setPageData(pageData[newIndex]);
   }
 
   const [currentIndex, setIndex] = useState(0);
