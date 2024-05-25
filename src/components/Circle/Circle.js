@@ -5,6 +5,9 @@ function Circle(props) {
 
   return(
     <div className={`circle circle_color_${color}`}>
+      <div className="circle__wheel">
+        
+      </div>
     </div>
   );
 }
