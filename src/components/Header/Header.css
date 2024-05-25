@@ -1,0 +1,32 @@
+.header {
+    display: flex;
+    gap: 170px;
+}
+
+.header__logo {
+    width: 105px;
+    height: 27px;
+}
+
+.header__nav {
+    display: flex;
+    gap: 60px;
+}
+
+.header__link {
+    font-family: 'Poppins', Verdana, sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    text-decoration: none;
+    color: #000;
+}
+
+.header__cart {
+    margin-left: auto;
+    background: none;
+    background-image: url('../../images/cart.svg');
+    border: none;
+    width: 20px;
+    height: 22px;
+    cursor: pointer;
+}

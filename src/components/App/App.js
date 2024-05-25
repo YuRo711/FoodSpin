@@ -1,9 +1,12 @@
-function App(props) {
-    return(
-        <div className="page">
+import Header from "../Header/Header";
+import "./App.css";
 
-        </div>
-    );
+function App(props) {
+  return(
+    <div className="page">
+      <Header/>
+    </div>
+  );
 }
 
 export default App;
