@@ -9,6 +9,7 @@ function Main(props) {
     <div className="main">
         <Circle
           data={props.data}
+          getNthImage={props.getNthImage}
         />
         <Product
           data={props.data}

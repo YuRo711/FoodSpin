@@ -17,6 +17,10 @@ function App(props) {
     setPageData(pageData[newIndex]);
   }
 
+  function getNthImage(n) {
+    return pageData[n].image;
+  }
+
   const [currentIndex, setIndex] = useState(0);
   const [currentData, setPageData] = useState(pageData[currentIndex]);
 
@@ -25,6 +29,7 @@ function App(props) {
       <Header/>
       <Main
         data={currentData}
+        getNthImage={getNthImage}
         scrollData={scrollData}
       />
     </div>

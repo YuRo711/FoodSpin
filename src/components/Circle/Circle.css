@@ -26,3 +26,16 @@
     border: dashed 3px #FF922C;
     border-radius: 50%;
 }
+
+.circle__images {
+    position: relative;
+    left: 275px;
+    top: -50px;
+}
+
+.circle__product {
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    transform-origin: 50px 375px;
+}
