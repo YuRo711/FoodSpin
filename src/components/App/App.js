@@ -16,7 +16,7 @@ function App(props) {
     setPageData(pageData[currentIndex]);
   }
 
-  const [currentIndex, setIndex] = useState(0);
+  const [currentIndex, setIndex] = useState(1);
   const [currentData, setPageData] = useState(pageData[currentIndex]);
 
   return(

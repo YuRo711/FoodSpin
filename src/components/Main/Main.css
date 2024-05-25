@@ -7,10 +7,15 @@
     font-size: 44px;
     font-weight: 600;
     line-height: 66px;
+    margin: 0;
 }
 
 .main__price_color_orange {
     color: #FF922C;
+}
+
+.main__price_color_green {
+    color: #54BF29;
     margin: 0;
 }
 
@@ -63,4 +68,17 @@
 
 .main__button_color_orange:active {
     background-color: #e07e21;    
+}
+
+.main__button_color_green {
+    background-color: #54BF29;
+    box-shadow: 0 20px 40px #DBF4D1;
+}
+
+.main__button_color_green:hover {
+    background-color: #67c442;    
+}
+
+.main__button_color_green:active {
+    background-color: #44a01f;    
 }

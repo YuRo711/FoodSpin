@@ -7,6 +7,10 @@ export const pageData = [
     image: "",
   },
   {
-
-  }
+    color: "green",
+    price: "$35",
+    title: "Asian Cucumber Salad",
+    description: "Asian Cucumber Salad Recipe made with crunchy cucumber, onion, rice wine vinegar, and a few secret ingredients!",
+    image: "",
+  },
 ];
