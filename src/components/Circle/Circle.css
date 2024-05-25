@@ -25,6 +25,7 @@
     left: 263px;
     border: dashed 3px #FF922C;
     border-radius: 50%;
+    transition: transform 0.4s ease-in-out;
 }
 
 .circle__images {

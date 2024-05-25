@@ -7,15 +7,12 @@ import { pageData } from "../../utils/constants";
 function App(props) {
   function scrollData(isForward) {
     let newIndex = currentIndex + (isForward ? 1 : -1);
-    let newRotationIndex = rotationIndex + (isForward ? 1 : -1);
+    setRotationIndex(rotationIndex + (isForward ? 1 : -1));
     if (newIndex >= pageData.length) {
       newIndex = 0;
-      newRotationIndex %= (pageData.length * 2);
     } else if (newIndex < 0) {
       newIndex = pageData.length - 1;
-      newRotationIndex = pageData.length * 2 - 1;
     }
-    setRotationIndex(newRotationIndex)
     setIndex(newIndex);
     setPageData(pageData[newIndex]);
   }
