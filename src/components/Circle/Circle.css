@@ -1,0 +1,13 @@
+.circle {
+    width: 1177px;
+    height: 1177px;
+    top: -645px;
+    right: -120px;
+    position: absolute;
+    border-radius: 50%;
+    z-index: -1;
+}
+
+.circle_color_orange {
+    background-color: rgba(232, 127, 30, 0.2);
+}

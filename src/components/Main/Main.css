@@ -1,14 +1,30 @@
-.main__circle {
-    width: 1177px;
-    height: 1177px;
-    top: -645px;
-    right: -120px;
-    position: absolute;
-    border-radius: 50%;
-    z-index: -1;
+.main__info {
+    max-width: 367px;
+    margin: 212px 0 0;
 }
 
-.main__circle_color_orange {
-    background-color: rgba(232, 127, 30, 0.2);
+.main__price {
+    font-size: 44px;
+    font-weight: 600;
+    line-height: 66px;
 }
 
+.main__price_color_orange {
+    color: #FF922C;
+    margin: 0;
+}
+
+.main__title {
+    margin: 0;
+    font-size: 36px;
+    font-weight: 500;
+    line-height: 50px;
+}
+
+.main__text {
+    margin: 12px 0 0;
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 19.5px;
+    text-transform: capitalize;
+}

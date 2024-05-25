@@ -1,14 +1,25 @@
+import Circle from "../Circle/Circle";
 import "./Main.css";
 
 function Main(props) {
-  const { color } = props.data;
+  const { color, price, title, description } = props.data;
+  console.log(title);
 
   return(
     <div className="main">
-        <div className={`main__circle 
-          main__circle_color_${color}`}
-        >
-
+        <Circle
+          data={props.data}
+        />
+        <div className="main__info">
+          <h2 className={`main__price main__price_color_${color}`}>
+            {price}
+          </h2>
+          <h1 className="main__title">
+            {title}
+          </h1>
+          <p className="main__text">
+            {description}
+          </p>
         </div>
     </div>
   );
