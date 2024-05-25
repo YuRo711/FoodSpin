@@ -1,6 +1,7 @@
 import image1 from "../images/05.png";
 import image2 from "../images/02.png";
 import image3 from "../images/01.png";
+import image4 from "../images/03.png";
 
 export const pageData = [
   {
@@ -23,5 +24,12 @@ export const pageData = [
     title: "Green Goddess Chicken Salad",
     description: "It is a non vegetarian salad which consists of the green goddess dressing mixed with chicken, peppers, olives and celery.",
     image: image3,
+  },
+  {
+    color: "green",
+    price: "$36",
+    title: "Ravioli Salad",
+    description: "Tender ravioli, generously filled with rich cheese, gracefully mingling with a colorful ensemble of tasty greens.",
+    image: image4,
   },
 ];
