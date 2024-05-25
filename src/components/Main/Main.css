@@ -28,3 +28,39 @@
     line-height: 19.5px;
     text-transform: capitalize;
 }
+
+.main__button {
+    margin: 28px 0 0;
+    width: 163px;
+    height: 48px;
+    border-radius: 69px;
+    background: none;
+    border: none;
+    font-size: 13px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #FFF;
+    cursor: pointer;
+    transition: transform 0.3s ease-in-out, background-color 0.3s ease-in-out;
+}
+
+.main__button:hover {
+    transform: scale(1.1);
+}
+
+.main__button:active {
+    transform: scale(1);
+}
+
+.main__button_color_orange {
+    background-color: #FF922C;
+    box-shadow: 0 20px 40px #F4E2D1;
+}
+
+.main__button_color_orange:hover {
+    background-color: #ffa44f;    
+}
+
+.main__button_color_orange:active {
+    background-color: #e07e21;    
+}

@@ -21,6 +21,11 @@ function Main(props) {
             {description}
           </p>
         </div>
+        <button className={`main__button main__button_color_${color}`}
+          type="button"
+        >
+          Order now
+        </button>
     </div>
   );
 }
