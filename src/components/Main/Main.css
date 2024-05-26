@@ -10,11 +10,11 @@
     margin: 0;
 }
 
-.main__price_color_orange {
+.main__price.main__price_color_orange {
     color: #FF922C;
 }
 
-.main__price_color_green {
+.main__price.main__price_color_green {
     color: #54BF29;
     margin: 0;
 }
@@ -24,6 +24,7 @@
     font-size: 36px;
     font-weight: 500;
     line-height: 50px;
+    transition: color 0.3s ease-in-out;
 }
 
 .main__text {

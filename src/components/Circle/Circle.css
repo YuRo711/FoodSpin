@@ -7,13 +7,14 @@
     border-radius: 50%;
     z-index: -1;
     overflow: hidden;
+    transition: background-color 0.3s ease-in-out;
 }
 
-.circle_color_orange {
+.circle.circle_color_orange {
     background-color: rgba(232, 127, 30, 0.2);
 }
 
-.circle_color_green {
+.circle.circle_color_green {
     background-color: rgba(84, 191, 41, 0.2);
 }
 
